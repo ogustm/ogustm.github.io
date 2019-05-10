@@ -1,8 +1,8 @@
-# my_hometown
-Website of my people's hometown
+# My Projects
+Click in any folder to take a look on my work
 
 
-You should all clone this repository,  
-Branch out from dev branch to your name_hometownname branch,  
-do your magic,  
-and then make a pull request to dev for me to review.  
+These works have beend maded during the journey as a web development student 
+Feel free to contact me or give some advices.
+Have a nice day!
+  
