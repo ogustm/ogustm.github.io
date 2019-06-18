@@ -28,25 +28,44 @@
             <!-- Navigation -->
             <nav class="navbar navbar-expand-lg navbar-dark sticky-top justify-content-between">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img class="logo_bio"src="/assets/brand/logo_transparent.png" alt="Biogarden">
-                    </a>
+                    <div class="img-container">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="logo_bio" src="/assets/brand/logo_transparent.png" alt="Biogarden">
+                        </a>
+                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse text-secondary" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto text-secondary">
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link text-white " href="index.html">Home
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
-                            <li class="nav-item text-secondary">
-                                <a class="nav-link text-white" href="a_propos.html">A propos</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="aboutus"
+                                    role="button" aria-haspopup="true" aria-expanded="false">A propos</a>
+                                <div class="dropdown-menu box-dropdown">
+                                    <a href="#aboutus" class="dropdown-item down-link">Qui Sommes-nous</a>
+                                    <div class="dropdown divider"></div>
+                                    <a href="#team" class="dropdown-item down-link">L'équipe</a>
+                                    <a href="#producers" class="dropdown-item down-link">Les Producteurs</a>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="produits.html">Produits</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#produits"
+                                    role="button" aria-haspopup="true" aria-expanded="false">Produits</a>
+                                <div class="dropdown-menu box-dropdown">
+                                    <a href="#fruits" class="dropdown-item down-link">Fruits</a>
+                                    <a href="#légumes" class="dropdown-item down-link">Légumes</a>
+                                    <a href="#tomates" class="dropdown-item down-link">Tomates</a>
+                                    <a href="#fruits" class="dropdown-item down-link">Salades</a>
+                                    <a href="#légumes" class="dropdown-item down-link">Games Japonaise</a>
+                                    <a href="#tomates" class="dropdown-item down-link">Herbes Aromatiques</a>
+                                    <a href="#tomates" class="dropdown-item down-link">Epices et Arômatiques</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="contact.html">Contact</a>
@@ -56,15 +75,17 @@
                 </div>
             </nav>
 
-
-            <div class="bg.primary text-center text-white mt-5 focus-text">
-                <h1 class="display-4 d-inline">Écologique Légumes</h1>
-                <p class="lead">Aucun additif chimique.
-                </p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg bg-success border-success" href="#" role="button">Lire la suite</a>
-                </p>
-            </div>
+            
+                <div class="justify-content-center bg.primary text-center text-white mt-5 focus-text">
+                    <h1 class="display-4 d-inline">Écologique Légumes</h1>
+                    <p class="lead">Aucun additif chimique.
+                    </p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg bg-success border-success" href="#" role="button">Lire la
+                            suite</a>
+                    </p>
+                </div>
+            
 
 
         </div>
