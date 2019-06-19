@@ -1,13 +1,41 @@
+$break-medium: 767px;
+$colorNature: green;
+$globalBg: #108d6f;  
+$teamColor: #007b5e;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;    
 }
 
 .wrapper {
-    height: 95vh;
+    height: 100vh;
 }
 
-nav {
+#aboutUs, #team, #producers #contact {
+    padding-top: 12%;
+    padding-bottom: 2%;
+    width: 100%;
+}
 
+#home {
+    padding-left: 0;
+    padding-right: 0;
+}
+section {
+    &.sectionFluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+nav {
+    &.navbar {
+        padding:0;
+    }
     .img-container {
 
         width: 60%;
@@ -29,6 +57,29 @@ nav {
       
 }
 
+.firstSection {
+    .img-row {
+        margin-top: 10%;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 8%;
+            font-size: 10rem;
+            letter-spacing: 2;
+            font-weight: 800;
+        }
+
+        p {
+            text-align: center;
+            margin-left: 2%;
+            line-height: 1.5;
+            letter-spacing: 1.2%;
+            font-weight: 400;
+        }
+    }
+
+}
+
 @keyframes bounceIn {
     0% {transform: scale(.9);}
     50% {transform: scale(1.05);}
@@ -46,6 +97,10 @@ nav {
     font-weight: bold;
     white-space: nowrap;
     text-shadow: 2px 2px 4px #000000;
+
+    @media screen and (max-width: $break-medium) {
+        text-align: center;
+    }
 
     a {
         display: block;
@@ -95,6 +150,17 @@ nav {
             text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                         0px 8px 13px rgba(0,0,0,0.1),
                         0px 18px 23px rgba(0,0,0,0.1);
+
+            .my-btn {
+                border-radius: 100px;
+                background: tomato;
+                border-color: white;
+
+                &:hover {
+                    background: $colorNature;
+                    color: white;
+                }
+            }
             
         }
 
@@ -119,6 +185,10 @@ nav {
 */
 
 
+@media (max-width:767px) {
+
+}
+
 .logo_bio {
     animation: 3s ease infinite bounce;
 }
@@ -136,3 +206,163 @@ nav {
         transform: scale(1);
     }
 }
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+ 
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: $globalBg;
+    border-color: $globalBg;
+    box-shadow: none;
+    outline: none;
+}
+ 
+.btn-primary {
+    color: #fff;
+    background-color: $teamColor;
+    border-color: $teamColor;
+}
+ 
+.the-team {
+    padding: 60px 0;
+    background: $teamColor;
+
+}
+ 
+#team {
+    text-align: center;
+    color: $teamColor;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+
+    h5 {
+        color: white;
+        margin-bottom: 3%;
+    }
+}
+
+
+.focus-text {
+    padding-top: 40vh;
+}
+ 
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+ 
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+ 
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+ 
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+ 
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+ 
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+ 
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+ 
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+ 
+.backside .card a {
+    font-size: 18px;
+    color: $teamColor !important;
+}
+ 
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: $teamColor !important;
+}
+ 
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.contact-section {
+    padding-right: 2%;
+    padding-left: 2%;    
+}
+
+.map-container-6{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+
+    iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+    

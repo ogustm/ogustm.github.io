@@ -17,30 +17,35 @@
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/520c18011d.js"></script>
 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 
-    <div class="container-fluid wrapper">
+    <div class="container-fluid wrapper" id="home">
 
         <div class="bg background-image">
 
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-dark navi sticky-top justify-content-between">
+            <nav class="navbar navbar-expand-lg navbar-dark navi fixed-top justify-content-between">
                 <div class="container">
                     <div class="img-fluid img-container">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="#home">
                             <img class="logo_bio" src="/assets/brand/logo_transparent.png" alt="Biogarden">
                         </a>
                     </div>
-                    <button class="navbar-toggler my-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler my-toggler text-center" type="button" data-toggle="collapse"
+                        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse navigation-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto navigation-list">
                             <li class="nav-item active">
-                                <a class="nav-link text-white " href="index.html">Home
+                                <a class="nav-link text-white " href="#home">Home
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
@@ -48,7 +53,7 @@
                                 <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="aboutus"
                                     role="button" aria-haspopup="true" aria-expanded="false">A propos</a>
                                 <div class="dropdown-menu box-dropdown">
-                                    <a href="#aboutus" class="dropdown-item down-link">Qui Sommes-nous</a>
+                                    <a href="#aboutUs" class="dropdown-item down-link">Qui Sommes-nous</a>
                                     <div class="dropdown divider"></div>
                                     <a href="#team" class="dropdown-item down-link">L'équipe</a>
                                     <a href="#producers" class="dropdown-item down-link">Les Producteurs</a>
@@ -68,7 +73,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="contact.html">Contact</a>
+                                <a class="nav-link text-white" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -76,12 +81,12 @@
             </nav>
 
 
-            <div class="justify-content-center bg.primary text-center text-white mt-5 focus-text">
+            <div class="justify-content-center text-center text-white focus-text">
                 <h1 class="display-4 d-inline">Écologique Légumes</h1>
                 <p class="lead">Aucun additif chimique.
                 </p>
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg bg-success border-success" href="#" role="button">Lire la
+                    <a class="btn btn-primary my-btn btn-lg border-success" href="#" role="button">Lire la
                         suite</a>
                 </p>
             </div>
@@ -91,6 +96,466 @@
         </div>
 
     </div>
+
+    <section class="container-fluid firstSection sectionFluid" id="aboutUs">
+        <div class="container">
+            <div class="row row-about">
+                <div class="col-md-6 col-about">
+                    <h2>Une tradition de famille</h2>
+                    <p>
+                        La S.A.S. REUSE BIOGARDEN, située dans le sud languedocien, a été crée en 1986 par Nicolas et
+                        Adrienne REUSE, après 20 années d’expérience dans la production agricole et la commercialisation
+                        en
+                        Suisse.
+
+                        Aujourd'hui, le Mas dispose de 21 hectares d'un seul tenant , dont 6 ha en raisins de table de
+                        diverses variétés.
+                    </p>
+
+                    <p>
+                        Un choix de légumes verts en production hivernale ; une gamme de salades, puis courges, melons,
+                        poivrons, tomates, concombres, courgettes, aubergines, ...au printemps.
+                        La société gère annuellement 1000 tonnes de fruits et légumes par an. Un marché porteur qui
+                        permet
+                        une
+                        bonne valorisation des légumes et des fruits.
+
+                        Au plan cultural, évolution des techniques de production (GRAB), avec une recherche et une
+                        expérimentation qui proposent un assortiment variétal de plus en plus résistant.
+                    </p>
+                </div>
+                <img class="col-md-6 img-fluid" src="assets/img/reuse.jpg" alt="Familie Reuse">
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Team -->
+    <section id="team" class="pb-5 the-team sectionFluid">
+        <div class="container">
+            <h5 class="section-title h1">L'équipe</h5>
+            <div class="row">
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="/assets/img/adrienne.jpg" alt="Adrienne Reuse">
+                                        </p>
+                                        <h4 class="card-title">Adrienne Reuse</h4>
+                                        <p class="card-text">Présidente de la SAS REUSE
+                                        </p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">We are cool</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Minus illum sunt quasi in sed, consequuntur placeat dolore facilis iste ad
+                                            cumque eum aliquid libero reprehenderit aperiam provident fuga? Inventore,
+                                            magnam.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="/assets/img/nicolas.jpg" alt="Nicolas Reuse">
+                                        </p>
+                                        <h4 class="card-title">Nicolas Reuse</h4>
+                                        <p class="card-text">Directeur de la SAS REUSE</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">We are cool</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Minus illum sunt quasi in sed, consequuntur placeat dolore facilis iste ad
+                                            cumque eum aliquid libero reprehenderit aperiam provident fuga? Inventore,
+                                            magnam.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="assets/img/linda.jpg" alt="Linda Reuse"></p>
+                                        <h4 class="card-title">Linda Reuse</h4>
+                                        <p class="card-text">Marchés Internationaux
+                                        </p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">We are cool</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Minus illum sunt quasi in sed, consequuntur placeat dolore facilis iste ad
+                                            cumque eum aliquid libero reprehenderit aperiam provident fuga? Inventore,
+                                            magnam.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="assets/img/christine.jpg"
+                                                alt="Christine Sannier"></p>
+                                        <h4 class="card-title">Christine Sannier</h4>
+                                        <p class="card-text">Comptabilité</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">We are cool</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Minus illum sunt quasi in sed, consequuntur placeat dolore facilis iste ad
+                                            cumque eum aliquid libero reprehenderit aperiam provident fuga? Inventore,
+                                            magnam.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="assets/img/oliver.jpg" alt="Oliver Blanc"></p>
+                                        <h4 class="card-title">Oliver Blanc</h4>
+                                        <p class="card-text">Responsable Ventes</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">We are cool</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Minus illum sunt quasi in sed, consequuntur placeat dolore facilis iste ad
+                                            cumque eum aliquid libero reprehenderit aperiam provident fuga? Inventore,
+                                            magnam.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="assets/img/eugenie.jpg" alt="Eugenie Moulard">
+                                        </p>
+                                        <h4 class="card-title">Eugenie Moulard</h4>
+                                        <p class="card-text">Agréage - Traçabilité et vente</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">We are cool</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Minus illum sunt quasi in sed, consequuntur placeat dolore facilis iste ad
+                                            cumque eum aliquid libero reprehenderit aperiam provident fuga? Inventore,
+                                            magnam.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fab fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+
+            </div>
+        </div>
+    </section>
+    <!-- Team -->
+
+    <!--Section: Contact v.1-->
+    <section class="section pb-5 contact-section" id="contact">
+
+        <!--Section heading-->
+        <h2 class="section-heading h1 pt-4">Contactez nous</h2>
+        <!--Section description-->
+        <p class="section-description pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
+            amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a
+            pariatur accusamus veniam.</p>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-5 mb-4">
+
+                <!--Form with header-->
+                <div class="card">
+
+                    <div class="card-body">
+                        <!--Header-->
+                        <div class="form-header blue accent-1">
+                            <h3><i class="fas fa-envelope"></i> Nous écrire:</h3>
+                        </div>
+
+                        <p>Nous écrirons rarement, mais seulement le meilleur contenu.</p>
+                        <br>
+
+                        <!--Body-->
+                        <div class="md-form">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="form-name" class="form-control">
+                            <label for="form-name">Votre nom</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="text" id="form-email" class="form-control">
+                            <label for="form-email">Votre email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-tag prefix grey-text"></i>
+                            <input type="text" id="form-Subject" class="form-control">
+                            <label for="form-Subject">Subject</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-pencil-alt prefix grey-text"></i>
+                            <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                            <label for="form-text">Icon Prefix</label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="btn btn-light-blue">Submit</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Form with header-->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-7">
+
+                <!--Google map-->
+                <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.450553941877!2d4.521300350426124!3d43.76350537901511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5d720d68b32d1%3A0x847c5c76b1065780!2sSarl+REUSE+Biogarden!5e0!3m2!1sen!2sde!4v1560984858614!5m2!1sen!2sde" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <br>
+                <!--Buttons-->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt"></i></a>
+                        <p>Mas Saint-Jean, 30127 Bellegarde</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1"><i class="fas fa-phone"></i></a>
+                        <p>+33 4 66 01 61 11</p>
+                        <p>Du lundi au vendredi de 8h00 à 16h00</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1"><i class="fas fa-envelope"></i></a>
+                        <p>info@sarlreuse.com</p>
+                        <p>sale@sarlreuse.com</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+    </section>
+    <!--Section: Contact v.1-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
